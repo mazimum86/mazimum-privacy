@@ -1,14 +1,437 @@
 <!DOCTYPE html>
-<html>
-<head><title>MazimumQuotes Privacy Policy</title></head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — MazimumQuotes</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+                   'Helvetica Neue', Arial, sans-serif;
+      background: #0A0A0A;
+      color: #F0EDE6;
+      line-height: 1.75;
+      padding: 0 0 60px;
+    }
+
+    /* ── Header ────────────────────────────── */
+    header {
+      background: linear-gradient(135deg, #0A0A0A 0%, #1A1200 100%);
+      border-bottom: 1px solid #2A2200;
+      padding: 48px 24px 40px;
+      text-align: center;
+    }
+    header .logo-mark {
+      font-size: 48px;
+      line-height: 1;
+      margin-bottom: 12px;
+      color: #C9A227;
+    }
+    header h1 {
+      font-size: 28px;
+      font-weight: 700;
+      color: #C9A227;
+      letter-spacing: 1px;
+      margin-bottom: 6px;
+    }
+    header .sub {
+      font-size: 14px;
+      color: #888;
+    }
+    header .effective {
+      display: inline-block;
+      margin-top: 16px;
+      background: rgba(201,162,39,0.12);
+      border: 1px solid rgba(201,162,39,0.3);
+      border-radius: 20px;
+      padding: 4px 16px;
+      font-size: 12px;
+      color: #C9A227;
+    }
+
+    /* ── Content ───────────────────────────── */
+    .container {
+      max-width: 740px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Summary card */
+    .summary-card {
+      margin: 36px 0 0;
+      background: #141400;
+      border: 1px solid rgba(201,162,39,0.25);
+      border-radius: 16px;
+      padding: 28px 24px;
+    }
+    .summary-card h2 {
+      font-size: 13px;
+      font-weight: 700;
+      color: #C9A227;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+    .summary-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+    @media (max-width: 500px) {
+      .summary-grid { grid-template-columns: 1fr; }
+    }
+    .summary-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+    .summary-item .icon {
+      font-size: 18px;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+    .summary-item p {
+      font-size: 13px;
+      color: #CCCCCC;
+    }
+    .summary-item strong {
+      display: block;
+      color: #F0EDE6;
+      font-size: 13px;
+      margin-bottom: 2px;
+    }
+
+    /* Sections */
+    section {
+      margin-top: 40px;
+    }
+    section h2 {
+      font-size: 18px;
+      font-weight: 700;
+      color: #C9A227;
+      margin-bottom: 12px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #1E1800;
+    }
+    section p {
+      font-size: 15px;
+      color: #CCCCCC;
+      margin-bottom: 14px;
+    }
+    section ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 14px;
+    }
+    section ul li {
+      font-size: 15px;
+      color: #CCCCCC;
+      padding: 5px 0 5px 22px;
+      position: relative;
+    }
+    section ul li::before {
+      content: "✦";
+      position: absolute;
+      left: 0;
+      color: #C9A227;
+      font-size: 10px;
+      top: 8px;
+    }
+
+    /* Highlight box */
+    .highlight {
+      background: #0F0F0F;
+      border-left: 3px solid #C9A227;
+      border-radius: 0 8px 8px 0;
+      padding: 14px 18px;
+      margin: 14px 0;
+      font-size: 14px;
+      color: #C9A227;
+    }
+
+    a {
+      color: #C9A227;
+      text-decoration: none;
+    }
+    a:hover { text-decoration: underline; }
+
+    /* Contact card */
+    .contact-card {
+      margin-top: 40px;
+      background: #141414;
+      border: 1px solid #2A2A2A;
+      border-radius: 16px;
+      padding: 28px 24px;
+      text-align: center;
+    }
+    .contact-card h2 {
+      font-size: 16px;
+      color: #C9A227;
+      margin-bottom: 8px;
+    }
+    .contact-card p {
+      font-size: 14px;
+      color: #888;
+      margin-bottom: 14px;
+    }
+    .contact-card a.email-btn {
+      display: inline-block;
+      background: #C9A227;
+      color: #0A0A0A;
+      font-weight: 700;
+      font-size: 14px;
+      padding: 10px 28px;
+      border-radius: 24px;
+      text-decoration: none;
+    }
+
+    /* Footer */
+    footer {
+      margin-top: 48px;
+      text-align: center;
+      font-size: 12px;
+      color: #444;
+    }
+    footer .gold { color: #6A5010; }
+  </style>
+</head>
 <body>
-<h1>Privacy Policy for MazimumQuotes</h1>
-<p>Effective date: May 2025</p>
 
-<p>MazimumQuotes does not collect, store, or share any personal information with third parties. All data you enter (display name, personal quotes, notes) stays locally on your device. No data is sent to any server.</p>
+  <!-- ── Header ───────────────────────────────────────────────── -->
+  <header>
+    <div class="logo-mark">❝</div>
+    <h1>MazimumQuotes</h1>
+    <div class="sub">Privacy Policy</div>
+    <div class="effective">Effective date: May 2025</div>
+  </header>
 
-<p>We use Google Mobile Ads (AdMob) to serve ads. AdMob may collect device information to serve relevant ads. You can learn more about Google's privacy policy at <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>.</p>
+  <div class="container">
 
-<p>If you have any questions, contact: <strong>chukwuka.jerry@gmail.com</strong></p>
+    <!-- ── Plain-language summary ────────────────────────────── -->
+    <div class="summary-card">
+      <h2>At a Glance</h2>
+      <div class="summary-grid">
+        <div class="summary-item">
+          <span class="icon">🔒</span>
+          <div>
+            <strong>Your data stays on your device</strong>
+            Names, personal quotes, notes — never uploaded anywhere.
+          </div>
+        </div>
+        <div class="summary-item">
+          <span class="icon">🚫</span>
+          <div>
+            <strong>We don't sell your data</strong>
+            No data is sold or shared with third parties by Mazimum.
+          </div>
+        </div>
+        <div class="summary-item">
+          <span class="icon">📢</span>
+          <div>
+            <strong>Ads are served by Google</strong>
+            AdMob may collect device info to personalise ads.
+          </div>
+        </div>
+        <div class="summary-item">
+          <span class="icon">🧒</span>
+          <div>
+            <strong>Not for children under 13</strong>
+            This app is intended for users aged 13 and above.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── 1. Who we are ─────────────────────────────────────── -->
+    <section>
+      <h2>1. Who We Are</h2>
+      <p>
+        MazimumQuotes is developed and published by <strong>Mazimum</strong>,
+        an independent developer based in Nigeria. If you have any questions
+        about this policy, you can reach us at
+        <a href="mailto:chukwuka.jerry@gmail.com">chukwuka.jerry@gmail.com</a>.
+      </p>
+    </section>
+
+    <!-- ── 2. Data we collect ─────────────────────────────────── -->
+    <section>
+      <h2>2. Data We Collect and How</h2>
+      <p>
+        MazimumQuotes is designed to work entirely offline. The following
+        information is stored <strong>locally on your device only</strong>
+        and is never transmitted to Mazimum's servers:
+      </p>
+      <ul>
+        <li>Your display name and handle (entered during onboarding)</li>
+        <li>Your chosen vibe and app preferences</li>
+        <li>Quotes you mark as favourites</li>
+        <li>Personal quotes, notes, and attribution you write and save</li>
+        <li>Images you generate and save to your gallery</li>
+        <li>Your daily streak and usage statistics</li>
+      </ul>
+      <div class="highlight">
+        All of the above is stored in a local Room database on your device.
+        Uninstalling the app permanently deletes all of this data.
+      </div>
+    </section>
+
+    <!-- ── 3. Third-party services ───────────────────────────── -->
+    <section>
+      <h2>3. Third-Party Services</h2>
+      <p>
+        While Mazimum itself does not collect personal data, certain
+        third-party services integrated into the app may do so independently.
+      </p>
+
+      <p><strong>Google AdMob</strong></p>
+      <p>
+        We use Google AdMob to display advertisements. AdMob may collect
+        device identifiers, IP address, and usage data to serve relevant ads.
+        This data is governed by Google's own privacy policy. You can review
+        it at
+        <a href="https://policies.google.com/privacy" target="_blank">
+          policies.google.com/privacy
+        </a>.
+        You can opt out of personalised ads in your device settings under
+        <em>Google &rarr; Ads &rarr; Opt out of Ads Personalisation</em>.
+      </p>
+
+      <p><strong>Google ML Kit (Face Detection)</strong></p>
+      <p>
+        When you choose a photo with a face, the app uses Google ML Kit's
+        on-device face detection to intelligently position the quote text.
+        This processing happens entirely on your device. No photo or
+        biometric data is sent to Google or Mazimum.
+      </p>
+
+      <p><strong>Google Play In-App Review API</strong></p>
+      <p>
+        After you create several quote images, the app may ask you to rate
+        it using the Google Play in-app review flow. This is handled
+        entirely by Google Play and Mazimum does not receive or store
+        your review content directly.
+      </p>
+
+      <p><strong>Google Play Billing (Pro subscription)</strong></p>
+      <p>
+        If you purchase a Pro subscription, payment is processed by Google
+        Play. Mazimum does not handle or store any payment information.
+      </p>
+    </section>
+
+    <!-- ── 4. Permissions ────────────────────────────────────── -->
+    <section>
+      <h2>4. App Permissions</h2>
+      <p>MazimumQuotes requests the following device permissions:</p>
+      <ul>
+        <li>
+          <strong>READ_MEDIA_IMAGES</strong> — to let you choose a photo
+          from your gallery as a quote background. Images are processed
+          locally and never uploaded.
+        </li>
+        <li>
+          <strong>WRITE_EXTERNAL_STORAGE</strong> (Android 9 and below only)
+          — to save generated quote images to your Pictures folder.
+        </li>
+        <li>
+          <strong>INTERNET</strong> — required for AdMob to serve ads and
+          for the in-app review flow. Not used for any other purpose.
+        </li>
+        <li>
+          <strong>RECEIVE_BOOT_COMPLETED</strong> — to restart the daily
+          widget refresh schedule when your device reboots.
+        </li>
+      </ul>
+    </section>
+
+    <!-- ── 5. User-generated content ─────────────────────────── -->
+    <section>
+      <h2>5. Personal Quotes You Write</h2>
+      <p>
+        MazimumQuotes allows you to write and save your own personal quotes —
+        from sermons, movies, conversations, scripture, or your own thoughts.
+        These quotes and any private notes you attach to them are stored
+        exclusively in your device's local database.
+      </p>
+      <div class="highlight">
+        Personal quotes are never backed up to the cloud, never shared with
+        Mazimum, and never visible to other users. They exist only on your
+        device and are deleted permanently when you uninstall the app.
+      </div>
+    </section>
+
+    <!-- ── 6. Images you create ──────────────────────────────── -->
+    <section>
+      <h2>6. Quote Images You Create</h2>
+      <p>
+        Images generated by the app are saved directly to your device's
+        gallery folder (<em>Pictures/MazimumQuotes</em>). When you share an
+        image using the share sheet, you are sharing it through your chosen
+        platform (WhatsApp, Instagram, etc.) according to that platform's
+        own privacy policy. Mazimum does not receive a copy of shared images.
+      </p>
+    </section>
+
+    <!-- ── 7. Children ──────────────────────────────────────── -->
+    <section>
+      <h2>7. Children's Privacy</h2>
+      <p>
+        MazimumQuotes is not directed at children under the age of 13.
+        We do not knowingly collect any information from children.
+        If you believe a child has used the app and you have concerns,
+        please contact us at
+        <a href="mailto:chukwuka.jerry@gmail.com">chukwuka.jerry@gmail.com</a>
+        and we will take appropriate action.
+      </p>
+    </section>
+
+    <!-- ── 8. Data retention and deletion ───────────────────── -->
+    <section>
+      <h2>8. Data Retention and Deletion</h2>
+      <p>
+        All data stored by MazimumQuotes lives on your device. There is no
+        account, no server-side profile, and no cloud backup.
+      </p>
+      <p>To delete all your data, simply uninstall the app. This permanently
+        removes your display name, preferences, favourites, personal quotes,
+        and all notes from your device.</p>
+    </section>
+
+    <!-- ── 9. Changes ───────────────────────────────────────── -->
+    <section>
+      <h2>9. Changes to This Policy</h2>
+      <p>
+        If we make material changes to this privacy policy — for example,
+        if we add a feature that sends data to a server — we will update
+        the effective date at the top of this page and notify users
+        through an in-app notice on the next app update.
+      </p>
+    </section>
+
+    <!-- ── Contact ───────────────────────────────────────────── -->
+    <div class="contact-card">
+      <h2>Questions?</h2>
+      <p>
+        We are a small independent developer and we read every message.
+        If you have any questions or concerns about your privacy,
+        please reach out directly.
+      </p>
+      <a href="mailto:chukwuka.jerry@gmail.com" class="email-btn">
+        chukwuka.jerry@gmail.com
+      </a>
+    </div>
+
+    <!-- ── Footer ────────────────────────────────────────────── -->
+    <footer>
+      <p>
+        &copy; 2025 Mazimum &nbsp;&middot;&nbsp;
+        MazimumQuotes &nbsp;&middot;&nbsp;
+        <span class="gold">Made with ♥ in Nigeria</span>
+      </p>
+    </footer>
+
+  </div>
 </body>
 </html>
